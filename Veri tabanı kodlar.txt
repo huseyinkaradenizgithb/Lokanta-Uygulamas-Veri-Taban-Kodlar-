@@ -1,0 +1,22 @@
+Not : Bu veri tabanı kodları tahmini olarak düşünülen Mysql dilinde kodlardır daha fazla tablo eklenebilir . 
+
+CREATE DATABASE IF NOT EXISTS restoran_db;
+USE restoran_db;
+
+
+CREATE TABLE IF NOT EXISTS urunler (
+    urun_id INT AUTO_INCREMENT,
+    urun_adi VARCHAR(100) NOT NULL,
+    fiyat DECIMAL(10,2) NOT NULL,
+    kategori VARCHAR(50) NULL,
+    aktif BOOLEAN NOT NULL DEFAULT TRUE,
+    PRIMARY KEY (urun_id)
+);
+
+
+CREATE TABLE IF NOT EXISTS musteriler (
+    musteri_id INT AUTO_INCREMENT,
+    ad_soyad VARCHAR(100) NOT NULL,
+    telefon VARCHAR(20) NULL,
+    PRIMARY KEY (musteri_id)
+);
