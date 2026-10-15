@@ -1,0 +1,1 @@
+# Lokanta-Uygulamas-Veri-Taban-Kodlar-
